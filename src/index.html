@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik+Dirt&display=swap"
       rel="stylesheet"
     />
-    <title>Vite App</title>
+    <title>Københavnerbilleder</title>
   </head>
 
   <!-- GAMMEL KODE -->
@@ -20,26 +20,45 @@
       Powered by <a href="https://vitejs.dev/guide">Vite</a>
     </p>
     <img src="img/vite.svg" alt="Vite Logo" /> -->
-  <body class="grid place-items-center">
+  <body>
     <!-- _________________SECTION1 -splashbillede___________ -->
-    <section>
-      <div class="bg-cover bg-fixed">
-        <img src="design/baggrund.png" alt="baggrund" />
-      </div>
-      <div>
-        <p>
-          Ønsker du lidt tips og inspo til at fange KBH's gadekulturs skjulte
-          skatte? Så er denne fotobog lige noget for dig.
-        </p>
-        <p>- af Sten Simons</p>
-      </div>
-      <div>
-        <button>KØB</button>
+    <section class="mb-40">
+      <div
+        class="grid-cols-2 flex-wrap-reverse bg-neutral-800 sm:flex md:grid lg:grid"
+      >
+        <div class="lg:w-3/3 m-8">
+          <img src="design/bogen.png" alt="baggrund" />
+        </div>
+        <div class="justify-content-evenly flex flex-wrap">
+          <div>
+            <div class="lg:w-3/3">
+              <img src="design/h1-1.png" alt="h1" />
+            </div>
+            <div class="lg:w-3/3">
+              <img src="design/h1-2.png" alt="h1" />
+            </div>
+          </div>
+          <div class="w-3/3 p-4 text-neutral-300">
+            <p>
+              Ønsker du lidt tips og inspo til at fange KBH's gadekulturs
+              skjulte skatte? Så er denne fotobog lige noget for dig.
+            </p>
+            <p>- af Sten Simons</p>
+            <div class="my-4 hover:cursor-pointer">
+              <button
+                class="bg-red-400 px-10 py-2 text-black shadow-neutral-800/100 hover:bg-red-300 hover:shadow-lg"
+              >
+                KØB
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ________________SECTION2 -stamdata mm.______________ -->
-    <section class="mb-10 flex flex-wrap place-content-evenly p-4">
-      <div class="box-border w-96 p-8">
+    <h2 class="mb-4">Kort info</h2>
+    <section class="mb-10 flex flex-wrap gap-4 place-content-center p-4">
+      <div class="box-border p-8 sm:w-60 lg:w-96">
         <h3>Stamdata</h3>
         <br />
         <p>Titel: Københavnerbilleder - en guide til hipster foto</p>
@@ -54,7 +73,7 @@
         <br />
         <p>Pris: 399.-</p>
       </div>
-      <div class="box-border w-96 p-8">
+      <div class="box-border p-8 sm:w-60 lg:w-96 ">
         <h3>Kort om bogen</h3>
         <br />
         <p>
@@ -67,7 +86,7 @@
       </div>
     </section>
     <!-- _________________SECTION3_____________________ -->
-    <section class="flex flex-wrap">
+    <section class="flex flex-wrap justify-center">
       <div class="bg-sm">
         <img
           class="w-64 p-4"
@@ -82,7 +101,7 @@
           alt=""
         />
       </div>
-      <div>
+      <div class="mb-12">
         <img
           class="w-64 p-4"
           src="bogen/kobenhavnerbilleder_oppefra.jpg"
@@ -92,10 +111,19 @@
     </section>
     <!-- ______________SECTION4 - KAPITLER___________-->
     <section>
-      <h2>Intro til kapitlerne</h2>
+      <!-- IKON -->
+      <div class="flex justify-center">
+        <div class="p-4 sm:w-60 lg:w-72">
+          <img src="design/bog_ikon.png" alt="omtale ikon" />
+        </div>
+      </div>
+      <!-- overskrift -->
+      <div>
+        <h2 class="p-10">Intro til kapitlerne</h2>
+      </div>
       <!-- FØRSTE KAPITEL KOLONNE -->
-      <div class="flex flex-wrap place-content-evenly p-8">
-        <div class="w-96 p-4">
+      <div class="flex flex-wrap place-content-center p-8">
+        <div class="md:w-100 p-4 sm:w-screen lg:w-96">
           <div class="mb-4">
             <h3>Kapitel 1 - Intro til street foto</h3>
             <p>
@@ -135,7 +163,7 @@
           </div>
         </div>
         <!-- ANDEN KAPITEL KOLONNE -->
-        <div class="w-96 p-4">
+        <div class="md:w-100 p-4 sm:w-screen lg:w-96">
           <div class="mb-4">
             <h3>Kapitel 2 - Om at skyde street</h3>
             <p>
@@ -177,44 +205,67 @@
       </div>
     </section>
     <!-- SECTION5 -->
-    <section>
-      <h2>Anmelderne siger</h2>
+    <section class="mb-64">
+      <!-- IKON -->
+      <div class="flex justify-center">
+        <div class="p-4 sm:w-60 lg:w-72">
+          <img src="design/omtale.png" alt="omtale ikon" />
+        </div>
+      </div>
+      <!-- overskrift -->
+      <div class="p-4">
+        <h2>Anmelderne siger</h2>
+      </div>
       <!-- første anmeldelse -->
-      <div class="flex flex-wrap place-content-evenly gap-4 p-4">
-        <div class="w-64 p-4">
+      <div class="flex flex-wrap place-content-center gap-4 p-4">
+        <div class="w-64 bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
           <img class="mb-4 w-48" src="design/5.png" alt="" />
           <p>
-            Københavnerbilleder er en grundig introduktion til at skyde billeder
+            "Københavnerbilleder er en grundig introduktion til at skyde billeder
             med retro-kant. Hvad enten du er har arbejdet med foto siden
             135-filmen kom på markedet, du kun har skudt digitalt eller er helt
-            nybegynder, er der masser af tips og tricks i bogen.
+            nybegynder, er der masser af tips og tricks i bogen."
           </p>
           <h3>- Hanne Hovgaard, Berlingeren</h3>
         </div>
         <!-- anden anmeldelse -->
-        <div class="w-64 p-4">
+        <div class="w-64 bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
           <img class="mb-4 w-48" src="design/4.png" alt="" />
           <p>
-            Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
-            skal man sige om en fotobog?
+            "Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
+            skal man sige om en fotobog?"
           </p>
           <h3>- Kim Kloggaard, Fotojournalen.dk</h3>
         </div>
         <!-- tredje anmeldelse -->
-        <div class="w-64 p-4">
+        <div class="w-64 bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
           <img class="mb-4 w-48" src="design/6.png" alt="" />
           <p>
-            Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje
+            "Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje
             fotobog er klart den bedste - her er han for alvor i sit rette
             element, meget bedre end “studiefotografering som begyndere.”
-            Tillykke - godt arbejde.
+            Tillykke - godt arbejde."
           </p>
           <h3>- Volmer Hansen, Lukkertiden.dk</h3>
         </div>
       </div>
     </section>
     <!-- SECTION6 -->
-    <section></section>
+    <section class=" md:grid lg:grid grid-cols-3 gap-2">
+        <div class="lg:w-3/3">
+          <img src="design/galleri.png" alt="">
+        </div>
+        <div class="col-span-2">
+          <div class="flex flex-wrap justify-evenly">
+            <img class="sm:p-4 md:w-64 lg:w-72 m-1" src="billeder/blur.webp" alt="slørret billede af gade">
+            <img class="sm:p-4 md:w-64 lg:w-72 m-1" src="billeder/mark2.webp" alt="slørret billede af gade">
+            <img class="sm:p-4 md:w-64 lg:w-72 m-1" src="billeder/mark3.webp" alt="slørret billede af gade">
+            <img class="sm:p-4 md:w-64 lg:w-72 m-1" src="billeder/sh2.webp" alt="slørret billede af gade">
+            <img class="sm:p-4 md:w-64 lg:w-72 m-1" src="billeder/street.webp" alt="slørret billede af gade">
+            <img class="sm:p-4 md:w-64 lg:w-72 m-1" src="billeder/mark1.webp" alt="slørret billede af gade">
+          </div>
+        </div>
+    </section>
     <!-- SECTION7 -->
     <section>
       <h2>Om forfatteren</h2>
