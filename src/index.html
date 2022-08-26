@@ -20,11 +20,11 @@
       Powered by <a href="https://vitejs.dev/guide">Vite</a>
     </p>
     <img src="img/vite.svg" alt="Vite Logo" /> -->
-  <body>
+  <body class="dark:bg-neutral-800">
     <!-- _________________SECTION1 -splashbillede___________ -->
-    <section id="top" class="mb-40">
+    <section id="top" class="mb-24">
       <div
-        class="grid-cols-2 flex-wrap-reverse bg-neutral-800 sm:flex md:grid lg:grid"
+        class="grid-cols-2 flex-wrap-reverse bg-neutral-800 dark:bg-neutral-900 sm:flex md:grid lg:grid"
       >
         <div class="lg:w-3/3 m-8">
           <img src="design/bogen.png" alt="baggrund" />
@@ -34,7 +34,7 @@
             <div class="lg:w-3/3">
               <img src="design/h1-1.png" alt="h1" />
             </div>
-            <div class="lg:w-3/3">
+            <div class="lg:w-3/3 mb-4">
               <img src="design/h1-2.png" alt="h1" />
             </div>
           </div>
@@ -46,7 +46,7 @@
             <p>- af Sten Simons</p>
             <div class="my-4 hover:cursor-pointer">
               <button
-                class="bg-red-400 px-10 py-2 text-black shadow-neutral-800/100 hover:bg-red-300 hover:shadow-lg"
+                class="bg-red-400 mb-10 px-10 py-2 text-black shadow-neutral-800/100 hover:bg-red-300 hover:shadow-lg"
               >
                 KØB
               </button>
@@ -56,37 +56,38 @@
       </div>
     </section>
     <!-- ________________SECTION2 -stamdata mm.______________ -->
-    <h2 class="mb-4">Kort info</h2>
+    <h2 class="mb-4 dark:text-white">Kort info</h2>
     <section class="mb-10 flex flex-wrap place-content-center gap-4 p-4">
       <div class="box-border p-8 sm:w-60 lg:w-96">
-        <h3>Stamdata</h3>
+        <h3 class="dark:text-white">Stamdata</h3>
         <br />
-        <p>Titel: Københavnerbilleder - en guide til hipster foto</p>
+        <p class="dark:text-neutral-300">Titel: Københavnerbilleder - en guide til hipster foto</p>
         <br />
-        <p>Forfatter: Sten Simons</p>
+        <p class="dark:text-neutral-300">Forfatter: Sten Simons</p>
         <br />
-        <p>Antal sider: 344</p>
+        <p class="dark:text-neutral-300">Antal sider: 344</p>
         <br />
-        <p>Forlag: Mellem Linjerne</p>
+        <p class="dark:text-neutral-300">Forlag: Mellem Linjerne</p>
         <br />
-        <p>ISBN: 987-6-987654-32-1</p>
+        <p class="dark:text-neutral-300">ISBN: 987-6-987654-32-1</p>
         <br />
-        <p>Pris: 399.-</p>
+        <p class="dark:text-neutral-300">Pris: 399.-</p>
       </div>
-      <div class="box-border p-8 sm:w-60 md:w-72 lg:w-96">
-        <h3>Lidt om bogen</h3>
+      <div class="box-border p-8 sm:w-72 md:w-80 lg:w-96">
+        <h3 class="dark:text-white">Lidt om bogen</h3>
         <br />
-        <p>
+        <p class="mb-4 dark:text-neutral-300">
           Københavnerbilleder er de danske streetfotografers bibel: Det er en
           fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
           væsentlige aspekter af streetfotografering fra grundlæggende teknik
           til kreative eksperimenter. Alt sammen krydret med masser af
           inspirerende fotos. God læselyst!
         </p>
+        <a class="underline underline-offset-8 text-red-400" href="#0">Hent prøvekapitel</a>
       </div>
     </section>
     <!-- _________________SECTION3_____________________ -->
-    <section class="flex flex-wrap justify-center">
+    <section class="flex flex-wrap justify-center mb-16">
       <div class="bg-sm">
         <img
           class="w-64 p-4"
@@ -110,7 +111,7 @@
       </div>
     </section>
     <!-- ______________SECTION4 - KAPITLER___________-->
-    <section>
+    <section class="mb-16">
       <!-- IKON -->
       <div class="flex justify-center">
         <div class="">
@@ -119,14 +120,14 @@
       </div>
       <!-- overskrift -->
       <div>
-        <h2 class="p-10">Intro til kapitlerne</h2>
+        <h2 class="p-10 dark:text-white">Intro til kapitlerne</h2>
       </div>
       <!-- FØRSTE KAPITEL KOLONNE -->
       <div class="flex flex-wrap place-content-center p-8">
         <div class="md:w-72 p-4 sm:w-screen lg:w-96">
           <div class="mb-4">
-            <h3>Kapitel 1 - Intro til street foto</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 1 - Intro til street foto</h3>
+            <p class="dark:text-neutral-300">
               Hvad er street foto? Det handler i bund og grund om at skyde byens
               liv og byens geometri (urban geometry). I dette kapitel får du en
               grundig intro til hvad street foto er og et overblik over nogen af
@@ -135,16 +136,16 @@
             </p>
           </div>
           <div class="mb-4">
-            <h3>Kapitel 3 - Om at finde det rette motiv</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 3 - Om at finde det rette motiv</h3>
+            <p class="dark:text-neutral-300">
               Indimellem er man heldig, andre gange kommer man hjem helt uden
               gode motiver. Med et par tips og tricks til at finde de rette
               motiver, stiger chancen gevaldigt for at fange de gode motiver.
             </p>
           </div>
           <div class="mb-4">
-            <h3>Kapitel 5 - Analog street foto</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 5 - Analog street foto</h3>
+            <p class="dark:text-neutral-300">
               Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
               end digital. Det signalerer entusiasme. Nogle teknikker og
               fremgangsmåder egner sig bedst til analog street foto. I dette
@@ -152,8 +153,8 @@
             </p>
           </div>
           <div class="mb-4">
-            <h3>Kapitel 7 - Kreative teknikker</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 7 - Kreative teknikker</h3>
+            <p class="dark:text-neutral-300">
               Dobbelteksponeringer, ICM (intentional camera moves), smadrede
               objektiver, gamle filmruller og alle mulige andre, spændende
               kreative teknikker kan løfte dine fotografier fra at være kedelige
@@ -165,8 +166,8 @@
         <!-- ANDEN KAPITEL KOLONNE -->
         <div class="md:w-72 p-4 sm:w-screen lg:w-96">
           <div class="mb-4">
-            <h3>Kapitel 2 - Om at skyde street</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 2 - Om at skyde street</h3>
+            <p class="dark:text-neutral-300">
               Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud
               på gaderne og prøve det! I dette kapitel får du en teknisk
               indføring i hvordan du bedst skyder street. Uanset om du er
@@ -176,7 +177,7 @@
           </div>
           <div class="mb-4">
             <h3>Kapitel 4 - Digital street foto</h3>
-            <p>
+            <p class="dark:text-neutral-300">
               De fleste af os skyder oftest digitalt fordi det er billigere og
               nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
               digital street foto. I dette kapitel får du en række tips og
@@ -184,8 +185,8 @@
             </p>
           </div>
           <div class="mb-4">
-            <h3>Kapitel 6 - Om at skyde sort/hvid</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 6 - Om at skyde sort/hvid</h3>
+            <p class="dark:text-neutral-300">
               Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
               Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
               adskiller sort/hvid fra farvefotografering? Her får du en række
@@ -193,8 +194,8 @@
             </p>
           </div>
           <div class="mb-4">
-            <h3>Kapitel 8 - Kom helt tæt på!</h3>
-            <p>
+            <h3 class="dark:text-white">Kapitel 8 - Kom helt tæt på!</h3>
+            <p class="dark:text-neutral-300">
               Street foto handler om at fotografere livet på gaden - men tør du
               at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så
               godt øve dig, for det er det der vil gøre dig til en bedre
@@ -205,7 +206,7 @@
       </div>
     </section>
     <!-- SECTION5 -->
-    <section class="mb-52">
+    <section class="mb-44">
       <!-- IKON -->
       <div class="flex justify-center">
         <div>
@@ -214,11 +215,11 @@
       </div>
       <!-- overskrift -->
       <div class="p-4">
-        <h2>Anmelderne siger</h2>
+        <h2 class="dark:text-white">Anmelderne siger</h2>
       </div>
       <!-- første anmeldelse -->
       <div class="flex flex-wrap place-content-center gap-4 p-4">
-        <div class="w-64 bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
+        <div class="w-64 dark:bg-[#A6AFA5] bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
           <img class="mb-4 w-48" src="design/5.png" alt="" />
           <p>
             "Københavnerbilleder er en grundig introduktion til at skyde
@@ -229,7 +230,7 @@
           <h3>- Hanne Hovgaard, Berlingeren</h3>
         </div>
         <!-- anden anmeldelse -->
-        <div class="w-64 bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
+        <div class="w-64 dark:bg-[#A6AFA5] bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
           <img class="mb-4 w-48" src="design/4.png" alt="" />
           <p>
             "Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
@@ -238,7 +239,7 @@
           <h3>- Kim Kloggaard, Fotojournalen.dk</h3>
         </div>
         <!-- tredje anmeldelse -->
-        <div class="w-64 bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
+        <div class="w-64 dark:bg-[#A6AFA5] bg-[#CAD0C9] p-4 shadow-lg shadow-neutral-300/50">
           <img class="mb-4 w-48" src="design/6.png" alt="" />
           <p>
             "Sten Simons kan det der - og han bliver bedre og bedre. Stens
@@ -251,39 +252,39 @@
       </div>
     </section>
     <!-- SECTION6 -->
-    <section class="mb-52 grid-cols-3 gap-2 md:grid lg:grid">
+    <section class="mb-24 grid-cols-3 gap-2 md:grid lg:grid">
       <div class="w-3/3">
         <img src="design/galleri.png" alt="galleri" />
       </div>
       <div class="col-span-2">
         <div class="flex flex-wrap justify-evenly">
           <img
-            class="m-1 p-4 sm:w-screen md:w-64 lg:w-90"
+            class="m-1 p-4 sm:w-screen md:w-64 lg:w-5/12"
             src="billeder/blur.webp"
             alt="slørret billede af gade"
           />
           <img
-            class="m-1 p-4 sm:w-screen md:w-64 lg:w-90"
+            class="m-1 p-4 sm:w-screen md:w-64 lg:w-5/12"
             src="billeder/mark2.webp"
             alt="slørret billede af gade"
           />
           <img
-            class="m-1 p-4 sm:w-screen md:w-64 lg:w-90"
+            class="m-1 p-4 sm:w-screen md:w-64 lg:w-5/12"
             src="billeder/mark3.webp"
             alt="slørret billede af gade"
           />
           <img
-            class="m-1 p-4 sm:w-screen md:w-64 lg:w-90"
+            class="m-1 p-4 sm:w-screen md:w-64 lg:w-5/12"
             src="billeder/sh2.webp"
             alt="slørret billede af gade"
           />
           <img
-            class="m-1 p-4 sm:w-screen md:w-64 lg:w-90"
+            class="m-1 p-4 sm:w-screen md:w-64 lg:w-5/12"
             src="billeder/street.webp"
             alt="slørret billede af gade"
           />
           <img
-            class="m-1 p-4 sm:w-screen md:w-64 lg:w-90"
+            class="m-1 p-4 sm:w-screen md:w-64 lg:w-5/12"
             src="billeder/mark1.webp"
             alt="slørret billede af gade"
           />
@@ -292,7 +293,7 @@
     </section>
     <!-- SECTION7 -->
     <section class="mb-24">
-      <h2 class="mb-8">Om forfatteren</h2>
+      <h2 class="mb-8 dark:text-white">Om forfatteren</h2>
       <div class="mb-10 flex flex-wrap place-content-center gap-4 p-4">
         <div>
           <img
@@ -302,8 +303,8 @@
           />
         </div>
         <div class="md:w-72 m-1 p-4 sm:w-screen sm:p-4 lg:w-96">
-          <h3>Biografi</h3>
-          <p>
+          <h3 class="dark:text-white">Biografi</h3>
+          <p class="dark:text-neutral-300">
             Sten Simons har en lang foto-karriere bag sig. Det hele startede i
             00’erne, da han gik rundt i Pisserenden for at fotografere
             ungdommens forfald. Det ledte til en række udstillinger, og blev
@@ -319,7 +320,7 @@
       </div>
       <div class="flex justify-center">
         <div>
-          <h3>Bestil din Københavnerbilleder idag!</h3>
+          <h3 class="dark:text-white">Bestil din Københavnerbilleder idag!</h3>
           <button
             class="my-4 bg-red-400 px-10 py-2 text-black shadow-neutral-800/100 hover:cursor-pointer hover:bg-red-300 hover:shadow-lg"
           >
@@ -330,10 +331,10 @@
     </section>
     <!-- back to the top funk -->
     <section class="flex justify-center mb-8">
-      <a class="underline underline-offset-2" href="#top">Tilbage til toppen</a>
+      <a class="underline underline-offset-8 dark:text-neutral-300" href="#top">Tilbage til toppen</a>
     </section>
     <!-- footer -->
-    <footer class="flex justify-center bg-neutral-800 text-neutral-300">
+    <footer class="flex justify-center dark:bg-neutral-900 bg-neutral-800 text-neutral-300">
       <div class="grid grid-cols-3">
         <div class="p-8">
           <h3 class="text-sm">Forlag:</h3>
@@ -346,9 +347,9 @@
         <div class="p-8">
           <p class="text-sm">Copyright © 2022</p>
         </div>
-        <div class="p-8">
-          <a class="text-sm" href="#0">Terms</a>
-          <a class="text-sm" href="#0">Policy</a>
+        <div class="p-8 flex justify-evenly">
+          <a class="text-sm underline underline-offset-8" href="#0">Terms</a>
+          <a class="text-sm underline underline-offset-8" href="#0">Policy</a>
         </div>
       </div>
     </footer>
